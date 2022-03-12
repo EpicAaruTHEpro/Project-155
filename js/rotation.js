@@ -15,7 +15,7 @@ AFRAME.registerComponent("diver-rotation-reader", {
 
 
             if (e.key === "ArrowRight") {
-                if (diverRotation.x < 10) {
+                if (diverRotation.x < 60) {
 
                     diverRotation.x += 0.5
                     this.el.setAttribute("rotation", diverRotation)
@@ -23,11 +23,27 @@ AFRAME.registerComponent("diver-rotation-reader", {
             }
 
             if (e.key === "ArrowLeft") {
-                if (diverRotation.x > -10) {
+                if (diverRotation.x > -60) {
 
                     diverRotation.x -= 0.5
                     this.el.setAttribute("rotation", diverRotation)
                 }
+            }
+
+            if (e.key === "w") {
+                //if (diverRotation.x > -60) {
+
+                    diverPosition.z -= 0.5
+                    this.el.setAttribute("rotation", diverRotation)
+                //}
+            }
+
+            if (e.key === "s") {
+                //if (diverRotation.x > -60) {
+
+                    diverPosition.z += 0.5
+                    this.el.setAttribute("rotation", diverRotation)
+                //}
             }
 
             if (e.key == "ArrowUp") {
@@ -36,8 +52,8 @@ AFRAME.registerComponent("diver-rotation-reader", {
                     this.el.setAttribute("rotation", diverRotation)
                 }
 
-                if (diverPosition.y < 2) {
-                    diverPosition.y += 0.01
+                if (diverPosition.y < 20) {
+                    diverPosition.y += 0.1
                     this.el.setAttribute("position", diverPosition)
                 }
             }
@@ -48,8 +64,8 @@ AFRAME.registerComponent("diver-rotation-reader", {
                     this.el.setAttribute("rotation", diverRotation)
                 }
 
-                if (diverPosition.y > -2) {
-                    diverPosition.y -= 0.01
+                if (diverPosition.y > -20) {
+                    diverPosition.y -= 0.1
                     this.el.setAttribute("position", diverPosition)
                 }
             }

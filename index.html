@@ -7,6 +7,7 @@
     <script src="./js/collider.js"></script>
     <script src="./js/target.js"></script>
     <script src="./js/rotation.js"></script>
+    <script src="./js/game.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"> </script>
 
   </head>
@@ -78,14 +79,14 @@
        </a-sky>
      
       <!-- Scuba Driver  -->
-      <a-entity gltf-model = "#scuba_driver" position = "5 0 15" scale = "0.1 0.1 0.1" rotation = "0 90 -20" diver-rotation-reader game-play dynamic-body = "mass: 0">
-        <a-sphere
+      <a-entity game-play gltf-model = "#scuba_driver" position = "5 0 15" scale = "0.1 0.1 0.1" rotation = "0 90 -20" diver-rotation-reader dynamic-body = "mass: 0">
+        <!--<a-sphere
         id="bubble1"
-        position="52.9829 119.97737 -49.38121"
+        position="5 0 15"
         radius="1"
         color="#b2ebf2"
-        animation="property: position; to: 52.9829 300 -49.38121;easing:linear; loop: true; dur: 2000"
-      ></a-sphere>
+        animation="property: position; to: 5 0 15;easing:linear; loop: true; dur: 2000"
+      ></a-sphere>-->
       </a-entity>
 
       <a-cylinder color="#00009e" radius="100" opacity="0.2"></a-cylinder>

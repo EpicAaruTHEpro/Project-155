@@ -31,7 +31,7 @@ AFRAME.registerComponent("target-coin", {
             dur: 1000
         })
         coinel.setAttribute("game-play", {elementId: `#${id}`})
-        coinel.setAttribute("static-body", {shape: "sphere", sphereRadius: 5})
+        coinel.setAttribute("static-body", {shape: "sphere", sphereRadius: 10})
         var terrainel = document.querySelector("#treasureCoins")
         terrainel.appendChild(coinel)
     }

@@ -15,7 +15,7 @@ AFRAME.registerComponent("game-play", {
                 console.log(elementId + "collided")
             }
 
-            else if (elementId.includes("#bird")) {
+            else if (elementId.includes("#fish")) {
                 console.log(elementId + "collided")
             }
         })
